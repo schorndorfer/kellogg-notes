@@ -1,3 +1,6 @@
+%------------------------------------------------------------------------------
+% Document Header
+%------------------------------------------------------------------------------
 \documentclass[10pt]{beamer}
 
 \usetheme{metropolis}
@@ -47,17 +50,16 @@
 
 \newcommand{\DSLAnnotator}{\texttt{DSL\_Annotator}}
 
-%------------------------------------------------------------------------------
-\title{Natural Language Processing}
+\title{Information Extraction}
 \subtitle{Regular Expressions and Beyond}
 \date{February 22, 2019}
 \author{Will Thompson, Ph.D.}
-% \institute{Center for modern beamer themes}
-% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 %------------------------------------------------------------------------------
 
+%------------------------------------------------------------------------------
+% Document Body
+%------------------------------------------------------------------------------
 \begin{document}
-
 \maketitle
 
 %------------------------------------------------------------------------------
@@ -67,54 +69,107 @@
 \end{frame}
 %------------------------------------------------------------------------------
 
+%------------------------------------------------------------------------------
 \section{Introduction}
+%------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}[fragile]{NLP: What is it and what is it good for?}
-\begin{itemize}
-  \item Text exploration (keyphrases, topic models)
-  \item Text classification (including sentiment analysis)
-  \item Information Extraction (unstructured to structured)
-\end{itemize}
+\begin{frame}[fragile]{Natural Language Processing: Use Cases}
+  Some practical use cases for NLP:
+  \begin{itemize}
+    \item Text exploration (keyphrases, topic models)
+    \item Text classification (including sentiment analysis)
+    \item \alert{Information Extraction (unstructured $\rightarrow$ structured)}
+  \end{itemize}
 \end{frame}
 %------------------------------------------------------------------------------
 
+%-----------------------------------------------------------------------------
+\begin{frame}{Unstructured Data}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Much human knowledge is contained \alert{unstructured data}, in the form of natural language text
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{center}
+	\fbox{\includegraphics[scale=0.1]{figures/information.jpg}}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\begin{frame}{Unstructured Data}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+  But getting at this information can be hard! What a human sees\ldots
+  \\ \vspace{5em}
+  Is not what a computer sees:
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{center}
+  \fbox{\includegraphics[scale=0.15]{figures/breast-cancer-note-screenshot.png}}
+  \fbox{\includegraphics[scale=0.21]{figures/breast-cancer-note-screenshot-hex.png}}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+%-----------------------------------------------------------------------------
+
 %------------------------------------------------------------------------------
-\begin{frame}{Information Extraction (IE)}
+\begin{frame}{Information Extraction}
 
-Information Extraction is the process of:
+Information extraction (IE) can be used to convert some of the information stored in text into \alert{structured data}:
 
-\begin{itemize}
-  \item Finding and understanding relevant parts of texts
-  \item \hspace{1em} and converting them to a structured representation
-  \item \hspace{1em} in order to answer questions like \alert{Who did what to whom?}
-\end{itemize}
+\begin{enumerate}
+   \item Search for relevant chunks of information in a corpus
+   \item Map these chunks to structured representations (potentially including relationships)
+   \item Store the results in structured format for downstream analysis
+\end{enumerate}
 
-\vspace{1em}
-IE converts relevant parts of unstructured text into a \alert{semantically  precise}  form  that  allows  further inferences to be made by computer algorithms. The output of an IE program is \alert{structured data}, such as data in the rows of a table in a relational database. Evaluation uses standard IR metrics (precision, recall, F1).
+\begin{center}
+	\fbox{\includegraphics[scale=0.4]{figures/unstructured.png}}
+\end{center}
 
 \end{frame}
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 \begin{frame}{Motivating Example}
-
+  \begin{center}
+    \fbox{\includegraphics[scale=0.1]{figures/excerpt-p17.png}}
+  \end{center}
 \end{frame}
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}{Evaluation Metrics}
-\begin{tabular}{p{5cm} p{7cm}}
-    \vspace{0pt}
-    \includegraphics[width=0.4\textwidth]{figures/precisionrecall.png}
-    &
-    \vspace{0pt}
-    \includegraphics[width=0.5\textwidth]{figures/precisionrecall-formulas.png}
-\end{tabular}
-\end{frame}
-%------------------------------------------------------------------------------
-
 \section{Regular Expressions}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Regular Expressions}
+\begin{itemize}
+  \item \alert{Regular expressions} (RE) are a compact and expressive mini-language for defining \alert{patterns} over text
+  \item RE functionality is available in most modern programming languages
+  \item RE core features include:
+  \begin{itemize}
+    \item Sequences: \texttt{/pneumonia/}
+    \item Disjunction: \texttt{/(a|b|c)/}
+    \item Ranges: \texttt{/[A-Z]/}, \texttt{/[0-9]/}
+    \item Repetition: \texttt{/[A-Z]*/}, \texttt{/[0-9]+/}
+    \item Optionality: \texttt{/[Cc]olou?r/}
+  \end{itemize}
+  \item \textcolor{blue}{\url{http://web.stanford.edu/~jurafsky/slp3}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Regular Expressions}
+Finite State Machines
+\end{frame}
+%------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 \begin{frame}[fragile]{Regular Expressions: Hands On Demo}
@@ -127,6 +182,18 @@ IE converts relevant parts of unstructured text into a \alert{semantically  pre
   (For fun: \textcolor{blue}{\url{https://regexcrossword.com/}})
 \end{center}
 
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Evaluating Performance}
+\begin{tabular}{p{5cm} p{7cm}}
+    \vspace{0pt}
+    \includegraphics[width=0.4\textwidth]{figures/precisionrecall.png}
+    &
+    \vspace{0pt}
+    \includegraphics[width=0.5\textwidth]{figures/precisionrecall-formulas.png}
+\end{tabular}
 \end{frame}
 %------------------------------------------------------------------------------
 
@@ -144,42 +211,42 @@ def regex = new AnnotationRegex(
 \end{lstlisting}
 
 \begin{itemize}
-	\item There are still too many possible phrasings to easily create an exhaustive dictionary
+	\item Regular expressions can rapidly become very complex and difficult to modify and maintain
 	\item Solution: create \alert{patterns} over annotations
-	\item Patterns that match a sequence of annotations trigger \alert{actions}, such as generating higher-level annotations.
+	\item Cascades of annotations, each level at a higher level of abstraction
 \end{itemize}
 
 \end{frame}
 %------------------------------------------------------------------------------
 
+% %------------------------------------------------------------------------------
+% \begin{frame}[fragile]{Contextual Attributes: Negation and History}
+% \begin{lstlisting}[frame=single]
+% def regex = new AnnotationRegex(
+%  (CancerFinding)
+%  (Token)(0,5)
+%  (PostNegationTerm)
+% \end{lstlisting}
+%
+% \begin{lstlisting}[frame=single]
+% def regex = new AnnotationRegex(
+%  (PreNegationTerm)
+%  (Token)(0,5)
+%  (CancerFinding)
+% \end{lstlisting}
+%
+% \begin{lstlisting}[frame=single]
+% def regex = new AnnotationRegex(
+%  (HistoryTerm)
+%  (Token)(0,5)
+%  (CancerFinding)
+% \end{lstlisting}
+%
+% \end{frame}
+% %------------------------------------------------------------------------------
+
 %------------------------------------------------------------------------------
-\begin{frame}[fragile]{Contextual Attributes: Negation and History}
-\begin{lstlisting}[frame=single]
-def regex = new AnnotationRegex(
- (CancerFinding)
- (Token)(0,5)
- (PostNegationTerm)
-\end{lstlisting}
-
-\begin{lstlisting}[frame=single]
-def regex = new AnnotationRegex(
- (PreNegationTerm)
- (Token)(0,5)
- (CancerFinding)
-\end{lstlisting}
-
-\begin{lstlisting}[frame=single]
-def regex = new AnnotationRegex(
- (HistoryTerm)
- (Token)(0,5)
- (CancerFinding)
-\end{lstlisting}
-
-\end{frame}
-%------------------------------------------------------------------------------
-
-%------------------------------------------------------------------------------
-\begin{frame}{Correcting Messy Text}
+\begin{frame}{Normalizing Messy Text}
 
 \begin{tabular}{p{5cm} p{7cm}}
     \vspace{0pt}
@@ -198,13 +265,10 @@ def regex = new AnnotationRegex(
 \end{frame}
 %------------------------------------------------------------------------------
 
-\section{Machine Learning}
-
 %------------------------------------------------------------------------------
-\begin{frame}[fragile]{Jupyter Notebook Demo}
-
-\end{frame}
+\section{Model-Based Methods}
 %------------------------------------------------------------------------------
+
 
 
 \end{document}
