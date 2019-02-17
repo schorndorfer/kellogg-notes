@@ -126,5 +126,8 @@ venv.bak/
 # BibTeX
 *.bbl
 *.blg
+*.fls
 
 **/.DS_store
+**/*~
+**/.*~
