@@ -88,7 +88,7 @@
 \begin{frame}{Unstructured Data}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-Much human knowledge is contained \alert{unstructured data}, in the form of natural language text
+Much human knowledge is encoded as \alert{unstructured data}, in the form of natural language text
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{center}
@@ -172,7 +172,7 @@ Finite State Machines
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}[fragile]{Regular Expressions: Hands On Demo}
+\begin{frame}[fragile]{Demo: Developing Regular Expressions}
 
 \begin{center}
   \includegraphics[scale=0.25]{figures/regex101-screenshot.png}
@@ -182,6 +182,14 @@ Finite State Machines
   (For fun: \textcolor{blue}{\url{https://regexcrossword.com/}})
 \end{center}
 
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]{Demo: Complete Working Example}
+  \begin{center}
+    \fbox{\includegraphics[width=0.9\textwidth]{figures/jupyter-notebook-screenshot.png}}
+  \end{center}
 \end{frame}
 %------------------------------------------------------------------------------
 
@@ -218,32 +226,6 @@ def regex = new AnnotationRegex(
 
 \end{frame}
 %------------------------------------------------------------------------------
-
-% %------------------------------------------------------------------------------
-% \begin{frame}[fragile]{Contextual Attributes: Negation and History}
-% \begin{lstlisting}[frame=single]
-% def regex = new AnnotationRegex(
-%  (CancerFinding)
-%  (Token)(0,5)
-%  (PostNegationTerm)
-% \end{lstlisting}
-%
-% \begin{lstlisting}[frame=single]
-% def regex = new AnnotationRegex(
-%  (PreNegationTerm)
-%  (Token)(0,5)
-%  (CancerFinding)
-% \end{lstlisting}
-%
-% \begin{lstlisting}[frame=single]
-% def regex = new AnnotationRegex(
-%  (HistoryTerm)
-%  (Token)(0,5)
-%  (CancerFinding)
-% \end{lstlisting}
-%
-% \end{frame}
-% %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 \begin{frame}{Normalizing Messy Text}
