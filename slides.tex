@@ -218,7 +218,27 @@ Information extraction (IE) can be used to convert some of the information store
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}{Evaluating Performance}
+\begin{frame}{Normalizing Messy Text}
+
+\begin{tabular}{p{5cm} p{7cm}}
+    \vspace{0pt}
+    \includegraphics[width=0.5\textwidth]{figures/string-alignment.png}
+	  \vspace{0pt}
+    \includegraphics[width=0.5\textwidth]{figures/edit-distance-table.png}
+    &
+    \vspace{0pt}
+    \includegraphics[width=0.5\textwidth]{figures/trie-example.png}
+\end{tabular}
+
+\begin{center}
+  \textcolor{blue}{\url{https://phiresky.github.io/levenshtein-demo}}
+\end{center}
+
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Evaluating IE Performance}
 \begin{tabular}{p{5cm} p{7cm}}
     \vspace{0pt}
     \includegraphics[width=0.4\textwidth]{figures/precisionrecall.png}
@@ -251,25 +271,72 @@ def regex = new AnnotationRegex(
 \end{frame}
 %------------------------------------------------------------------------------
 
-%------------------------------------------------------------------------------
-\begin{frame}{Normalizing Messy Text}
-
-\begin{tabular}{p{5cm} p{7cm}}
-    \vspace{0pt}
-    \includegraphics[width=0.5\textwidth]{figures/string-alignment.png}
-	  \vspace{0pt}
-    \includegraphics[width=0.5\textwidth]{figures/edit-distance-table.png}
-    &
-    \vspace{0pt}
-    \includegraphics[width=0.5\textwidth]{figures/trie-example.png}
-\end{tabular}
+%-----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Example: CT Scans}
 
 \begin{center}
-  \textcolor{blue}{\url{https://phiresky.github.io/levenshtein-demo}}
+	\includegraphics[scale=0.2]{figures/ct-scan-image-and-note.png}
+\end{center}
+
+\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\itshape%
+  What factors influence use of prophylactic seizure medications in patients with intracerebral hemorrhage?}}
+
+\end{frame}
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Example: CT Scans}
+
+\begin{center}
+	\includegraphics[scale=0.2]{figures/ct-scan-image-and-note-blowup.png}
+\end{center}
+
+\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\itshape%
+  What factors influence use of prophylactic seizure medications in patients with intracerebral hemorrhage?}}
+
+\end{frame}
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{CT Scan Concepts}
+
+\begin{center}
+	\includegraphics[scale=0.3]{figures/ct-scan-concepts.png}
+	\\ \vspace{1em}
+	\includegraphics[scale=0.3]{figures/ct-scan-concepts-structured.png}
 \end{center}
 
 \end{frame}
-%------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{CT Scan Relations}
+
+\begin{center}
+	\includegraphics[scale=0.3]{figures/ct-scan-rels.png}
+	\\ \vspace{1em}
+	\includegraphics[scale=0.25]{figures/ct-scan-rels-structured.png}
+\end{center}
+
+\end{frame}
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{CT Scan Coreference}
+
+\begin{center}
+	\includegraphics[scale=0.3]{figures/ct-scan-refs.png}
+	\\
+	\includegraphics[scale=0.25]{figures/ct-scan-refs-structured.png}
+\end{center}
+
+\end{frame}
+%-----------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 \section{Model-Based Methods}
