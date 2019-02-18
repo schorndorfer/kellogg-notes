@@ -170,8 +170,10 @@ Information extraction (IE) can be used to convert some of the information store
     \item Repetition: \texttt{/[A-Z]*/}, \texttt{/[0-9]+/}
     \item Optionality: \texttt{/[Cc]olou?r/}
   \end{itemize}
-  \item \textcolor{blue}{\url{http://web.stanford.edu/~jurafsky/slp3}}
 \end{itemize}
+\begin{center}
+  \textcolor{blue}{\url{http://web.stanford.edu/~jurafsky/slp3}}
+\end{center}
 \end{frame}
 %------------------------------------------------------------------------------
 
@@ -264,8 +266,8 @@ def regex = new AnnotationRegex(
 
 \begin{itemize}
 	\item Regular expressions can rapidly become very complex and difficult to modify and maintain
-	\item Solution: create \alert{patterns} over annotations
-	\item Cascades of annotations, each level at a higher level of abstraction
+	\item Solution: \alert{annotation-level regular expressions}
+	\item Create cascades of annotations, each level at a higher level of abstraction
 \end{itemize}
 
 \end{frame}
@@ -273,7 +275,7 @@ def regex = new AnnotationRegex(
 
 %-----------------------------------------------------------------------------
 \begin{frame}
-\frametitle{Example: CT Scans}
+\frametitle{Example: CT Scan}
 
 \begin{center}
 	\includegraphics[scale=0.2]{figures/ct-scan-image-and-note.png}
@@ -287,7 +289,7 @@ def regex = new AnnotationRegex(
 
 %-----------------------------------------------------------------------------
 \begin{frame}
-\frametitle{Example: CT Scans}
+\frametitle{Example: CT Scan}
 
 \begin{center}
 	\includegraphics[scale=0.2]{figures/ct-scan-image-and-note-blowup.png}
@@ -301,7 +303,7 @@ def regex = new AnnotationRegex(
 
 %-----------------------------------------------------------------------------
 \begin{frame}
-\frametitle{CT Scan Concepts}
+\frametitle{Concepts}
 
 \begin{center}
 	\includegraphics[scale=0.3]{figures/ct-scan-concepts.png}
@@ -314,7 +316,7 @@ def regex = new AnnotationRegex(
 
 %-----------------------------------------------------------------------------
 \begin{frame}
-\frametitle{CT Scan Relations}
+\frametitle{Concept Relations}
 
 \begin{center}
 	\includegraphics[scale=0.3]{figures/ct-scan-rels.png}
@@ -327,7 +329,7 @@ def regex = new AnnotationRegex(
 
 %-----------------------------------------------------------------------------
 \begin{frame}
-\frametitle{CT Scan Coreference}
+\frametitle{Coreference: A bridge too far?}
 
 \begin{center}
 	\includegraphics[scale=0.3]{figures/ct-scan-refs.png}
