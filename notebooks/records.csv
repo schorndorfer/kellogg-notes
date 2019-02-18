@@ -1,60 +1,60 @@
-"dept","name","title","state","dist","salary"
-"GOVERNMENT PRINTING OFFICE","George H. Carter","Public Printer","IA","9th","10000"
-"GOVERNMENT PRINTING OFFICE","John Greene","Deputy Public Printer","MA","5th","7500"
-"GOVERNMENT PRINTING OFFICE","Mary A. Tate","Assistant to the Public Printer","TN","2d","4000"
-"GOVERNMENT PRINTING OFFICE","Henry H. Wright","Chief clerk","NY","28th","4200"
-"GOVERNMENT PRINTING OFFICE","Edward J. Wilver","Disbursing clerk","PA","16th","4000"
-"GOVERNMENT PRINTING OFFICE","William A. Smith","Congressional Record clerk","","","4000"
-"GOVERNMENT PRINTING OFFICE","Daniel P. Bush","Medical and sanitary officer","NE","1st","4200"
-"GOVERNMENT PRINTING OFFICE","Janes K. Wallace","Superintendent of accounts and budget officer_","OH","1st","5000"
-"GOVERNMENT PRINTING OFFICE","Ernest E. Emerson","Purchasing agent","MD","5th","4600"
-"GOVERNMENT PRINTING OFFICE","Edward 0. Reed","Technical director","DC","","5200"
-"GOVERNMENT PRINTING OFFICE","Burr G. Williams","Chief instructor of apprentices","IA","10th","3600"
-"GOVERNMENT PRINTING OFFICE","Ellwood S. Moorhead","Production manager","PA","6th","5200"
-"GOVERNMENT PRINTING OFFICE","Edward A. Huse","Night assistant production manager","MA","6th","4800"
-"GOVERNMENT PRINTING OFFICE","Hermann B. Barnhart","Superintendent of printing","IN","9th","4400"
-"GOVERNMENT PRINTING OFFICE","Bert E. Bair","Superintendent of presswork","","6th","4400"
-"GOVERNMENT PRINTING OFFICE","Martin R. Speelman","Superintendent of binding","MO","4th","4400"
-"GOVERNMENT PRINTING OFFICE","Edward G. Whall","Superintendent of platemaking","MA","12th","4400"
-"GOVERNMENT PRINTING OFFICE","William A. Mitchell","Superintendent of planning","NC","5th","4400"
-"GOVERNMENT PRINTING OFFICE","Alfred E. Hanson","Superintendent of construction and mainte","","14th","5200"
-"GOVERNMENT PRINTING OFFICE","Alton P. Tisdel","Superintendent of documents","OH","22d","5000"
-"GOVERNMENT PRINTING OFFICE","William H. Kervin","Storekeeper and traffic manager","NY","39th","4200"
-"LIBRARY OF CONGRESS","Herbert Putnam","Librarian","MA","","10000"
-"LIBRARY OF CONGRESS","Frederick W. Ashley","Chief, assistant librarian","OH","22d","7000"
-"LIBRARY OF CONGRESS","Allen R. Boyd","Executive assistant","PA","","4800"
-"LIBRARY OF CONGRESS","Jessica L. Farnum","Secretary","NY","15th","3600"
-"LIBRARY OF CONGRESS","Martin A. Roberts","Superintendent, reading room","MD","4th","5800"
-"LIBRARY OF CONGRESS","Charles W. Coleman","Chief assistant, reading room_","VA","3d","3500"
-"LIBRARY OF CONGRESS","David C. Mearns","Chief assistant, reading room","MD","6th","3300"
-"LIBRARY OF CONGRESS","Hugh A. Morrison","Assistant in charge, Representatives' reading","MD","3d","3500"
-"LIBRARY OF CONGRESS","George H. Milne","Assistant in charge, Representatives' reading","MD","","3500"
-"LIBRARY OF CONGRESS","Maude G. Nichols","Acting, in charge, service for the blind","NJ","12th","2200"
-"LIBRARY OF CONGRESS","Linn R. Blanchard","Chief, accessions division","IN","4th","4800"
-"LIBRARY OF CONGRESS","William Adams Slade","Chief bibliographer","RI","1st","5000"
-"LIBRARY OF CONGRESS","Arthur R. Kimball","Assistant in charge, binding division","NH","2d","2200"
-"LIBRARY OF CONGRESS","Charles H. Hastings","Chief, card division","ME","2d","5200"
-"LIBRARY OF CONGRESS","Charles Martel","Chief, catalogue division","IL","9th","6000"
-"LIBRARY OF CONGRESS","Arthur W. Hummel","Assistant in charge, Chinese collection","IL","22d","4800"
-"LIBRARY OF CONGRESS","Clarence W. Perley","Chief, classification division","IL","9th","4800"
-"LIBRARY OF CONGRESS","James B. Childs","Acting chief, documents division","IL","2d","4800"
-"LIBRARY OF CONGRESS","Worthington C. Ford","European representative","MA","","4600"
-"LIBRARY OF CONGRESS","H. H. B. Meyer","Director, Legislative Reference","NY","5th","6000"
-"LIBRARY OF CONGRESS","Samuel M. Croft","Assistant in charge, mail division","ND","1st","2700"
-"LIBRARY OF CONGRESS","John Franklin Jameson","Chief, division of manuscripts","IL","","4800"
-"LIBRARY OF CONGRESS","Lawrence Martin","Chief, division of maps","MA","","5200"
-"LIBRARY OF CONGRESS","Carl Engel","Chief, music division","MA","14th","4800"
-"LIBRARY OF CONGRESS","Henry S. Parsons","Chief, periodical division","MA","2d","4000"
-"LIBRARY OF CONGRESS","Leicester B. Holland","Chief, print division","PA","6th","4600"
-"LIBRARY OF CONGRESS","Israel Shapiro","Assistant in charge, Semitic section","DC","","3300"
-"LIBRARY OF CONGRESS","Alexis V. Babine","Assistant in charge, Slavic section","NY","37th","3400"
-"LIBRARY OF CONGRESS","William Lee Corbin","Custodian, Smithsonian deposit","MA","","4800"
-"LIBRARY OF CONGRESS","Frederick E. Brasch","Assistant in charge, Smithsonian division_ _","CA","8th","3300"
-"LIBRARY OF CONGRESS","John T. Vance, jr","Law librarian","KY","7th","6000"
-"LIBRARY OF CONGRESS","Thorvald Solberg","Register of copyrights","MD","6th","6000"
-"LIBRARY OF CONGRESS","William L. Brown","Assistant register of copyrights","VA","1st","3900"
-"LIBRARY OF CONGRESS","William C. Bond","Superintendent, Library building","MD","3d","3300"
-"LIBRARY OF CONGRESS","Wade H. Rabbitt","Disbursing officer","MD","5th","3500"
-"UNITED STATES BOTANIC GARDEN","George W. Hess","Director","DC","","5200"
-"UNITED STATES BOTANIC GARDEN","Wilmer J. Paget","Assistant director","DC","","3000"
-"UNITED STATES BOTANIC GARDEN","Emily Koons","Chief clerk","DC","","2100"
+dept,dist,name,salary,state,title
+GOVERNMENT PRINTING OFFICE,9th,George H. Carter,10000,IA,Public Printer
+GOVERNMENT PRINTING OFFICE,5th,John Greene,7500,MA,Deputy Public Printer
+GOVERNMENT PRINTING OFFICE,2d,Mary A. Tate,4000,TN,Assistant to the Public Printer
+GOVERNMENT PRINTING OFFICE,28th,Henry H. Wright,4200,NY,Chief clerk
+GOVERNMENT PRINTING OFFICE,16th,Edward J. Wilver,4000,PA,Disbursing clerk
+GOVERNMENT PRINTING OFFICE,,William A. Smith,4000,,Congressional Record clerk
+GOVERNMENT PRINTING OFFICE,1st,Daniel P. Bush,4200,NE,Medical and sanitary officer
+GOVERNMENT PRINTING OFFICE,1st,Janes K. Wallace,5000,OH,Superintendent of accounts and budget officer_
+GOVERNMENT PRINTING OFFICE,5th,Ernest E. Emerson,4600,MD,Purchasing agent
+GOVERNMENT PRINTING OFFICE,,Edward 0. Reed,5200,DC,Technical director
+GOVERNMENT PRINTING OFFICE,10th,Burr G. Williams,3600,IA,Chief instructor of apprentices
+GOVERNMENT PRINTING OFFICE,6th,Ellwood S. Moorhead,5200,PA,Production manager
+GOVERNMENT PRINTING OFFICE,6th,Edward A. Huse,4800,MA,Night assistant production manager
+GOVERNMENT PRINTING OFFICE,9th,Hermann B. Barnhart,4400,IN,Superintendent of printing
+GOVERNMENT PRINTING OFFICE,6th,Bert E. Bair,4400,,Superintendent of presswork
+GOVERNMENT PRINTING OFFICE,4th,Martin R. Speelman,4400,MO,Superintendent of binding
+GOVERNMENT PRINTING OFFICE,12th,Edward G. Whall,4400,MA,Superintendent of platemaking
+GOVERNMENT PRINTING OFFICE,5th,William A. Mitchell,4400,NC,Superintendent of planning
+GOVERNMENT PRINTING OFFICE,14th,Alfred E. Hanson,5200,,Superintendent of construction and mainte
+GOVERNMENT PRINTING OFFICE,22d,Alton P. Tisdel,5000,OH,Superintendent of documents
+GOVERNMENT PRINTING OFFICE,39th,William H. Kervin,4200,NY,Storekeeper and traffic manager
+LIBRARY OF CONGRESS,,Herbert Putnam,10000,MA,Librarian
+LIBRARY OF CONGRESS,22d,Frederick W. Ashley,7000,OH,"Chief, assistant librarian"
+LIBRARY OF CONGRESS,,Allen R. Boyd,4800,PA,Executive assistant
+LIBRARY OF CONGRESS,15th,Jessica L. Farnum,3600,NY,Secretary
+LIBRARY OF CONGRESS,4th,Martin A. Roberts,5800,MD,"Superintendent, reading room"
+LIBRARY OF CONGRESS,3d,Charles W. Coleman,3500,VA,"Chief assistant, reading room_"
+LIBRARY OF CONGRESS,6th,David C. Mearns,3300,MD,"Chief assistant, reading room"
+LIBRARY OF CONGRESS,3d,Hugh A. Morrison,3500,MD,"Assistant in charge, Representatives' reading"
+LIBRARY OF CONGRESS,,George H. Milne,3500,MD,"Assistant in charge, Representatives' reading"
+LIBRARY OF CONGRESS,12th,Maude G. Nichols,2200,NJ,"Acting, in charge, service for the blind"
+LIBRARY OF CONGRESS,4th,Linn R. Blanchard,4800,IN,"Chief, accessions division"
+LIBRARY OF CONGRESS,1st,William Adams Slade,5000,RI,Chief bibliographer
+LIBRARY OF CONGRESS,2d,Arthur R. Kimball,2200,NH,"Assistant in charge, binding division"
+LIBRARY OF CONGRESS,2d,Charles H. Hastings,5200,ME,"Chief, card division"
+LIBRARY OF CONGRESS,9th,Charles Martel,6000,IL,"Chief, catalogue division"
+LIBRARY OF CONGRESS,22d,Arthur W. Hummel,4800,IL,"Assistant in charge, Chinese collection"
+LIBRARY OF CONGRESS,9th,Clarence W. Perley,4800,IL,"Chief, classification division"
+LIBRARY OF CONGRESS,2d,James B. Childs,4800,IL,"Acting chief, documents division"
+LIBRARY OF CONGRESS,,Worthington C. Ford,4600,MA,European representative
+LIBRARY OF CONGRESS,5th,H. H. B. Meyer,6000,NY,"Director, Legislative Reference"
+LIBRARY OF CONGRESS,1st,Samuel M. Croft,2700,ND,"Assistant in charge, mail division"
+LIBRARY OF CONGRESS,,John Franklin Jameson,4800,IL,"Chief, division of manuscripts"
+LIBRARY OF CONGRESS,,Lawrence Martin,5200,MA,"Chief, division of maps"
+LIBRARY OF CONGRESS,14th,Carl Engel,4800,MA,"Chief, music division"
+LIBRARY OF CONGRESS,2d,Henry S. Parsons,4000,MA,"Chief, periodical division"
+LIBRARY OF CONGRESS,6th,Leicester B. Holland,4600,PA,"Chief, print division"
+LIBRARY OF CONGRESS,,Israel Shapiro,3300,DC,"Assistant in charge, Semitic section"
+LIBRARY OF CONGRESS,37th,Alexis V. Babine,3400,NY,"Assistant in charge, Slavic section"
+LIBRARY OF CONGRESS,,William Lee Corbin,4800,MA,"Custodian, Smithsonian deposit"
+LIBRARY OF CONGRESS,8th,Frederick E. Brasch,3300,CA,"Assistant in charge, Smithsonian division_ _"
+LIBRARY OF CONGRESS,7th,"John T. Vance, jr",6000,KY,Law librarian
+LIBRARY OF CONGRESS,6th,Thorvald Solberg,6000,MD,Register of copyrights
+LIBRARY OF CONGRESS,1st,William L. Brown,3900,VA,Assistant register of copyrights
+LIBRARY OF CONGRESS,3d,William C. Bond,3300,MD,"Superintendent, Library building"
+LIBRARY OF CONGRESS,5th,Wade H. Rabbitt,3500,MD,Disbursing officer
+UNITED STATES BOTANIC GARDEN,,George W. Hess,5200,DC,Director
+UNITED STATES BOTANIC GARDEN,,Wilmer J. Paget,3000,DC,Assistant director
+UNITED STATES BOTANIC GARDEN,,Emily Koons,2100,DC,Chief clerk
