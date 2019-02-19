@@ -160,29 +160,21 @@ Information extraction (IE) can be used to convert some of the information store
 %------------------------------------------------------------------------------
 \begin{frame}{Regular Expressions}
 \begin{itemize}
-  \item \alert{Regular expressions} (RE) are a compact and expressive mini-language for defining \alert{patterns} over text
-  \item RE functionality is available in most modern programming languages
-  \item RE core features include:
+  \item \alert{Regular expressions} (regex) are a compact and expressive mini-language for defining \alert{patterns} over text
+  \item A regex \alert{matches} a set of strings
+  \item Regex patterns can contain:
   \begin{itemize}
-    \item Sequences: \texttt{/pneumonia/}
-    \item Disjunction: \texttt{/(a|b|c)/}
-    \item Ranges: \texttt{/[A-Z]/}, \texttt{/[0-9]/}
-    \item Repetition: \texttt{/[A-Z]*/}, \texttt{/[0-9]+/}
-    \item Optionality: \texttt{/[Cc]olou?r/}
+    \item Sequences: \textcolor{darkred}{\texttt{/abc/}}
+    \item Disjunctions: \textcolor{darkred}{\texttt{/(a|b|c)/}}
+    \item Repetitions: \textcolor{darkred}{\texttt{/[A-Z]*/}}, \textcolor{darkred}{\texttt{/[0-9]+/}, \textcolor{darkred}{\texttt{/a\{2,3\}b+/}}}
+    \item Ranges: \textcolor{darkred}{\texttt{/[A-Z]/}}, \textcolor{darkred}{\texttt{/[a-z]/}}, \textcolor{darkred}{\texttt{/[0-9]/}}
+    \item Classes: \textcolor{darkred}{\texttt{/\textbackslash w/}}, \textcolor{darkred}{\texttt{/\textbackslash s/}}, \textcolor{darkred}{\texttt{/./}}
+    \item Optionality: \textcolor{darkred}{\texttt{/colou?rs?/}}
   \end{itemize}
 \end{itemize}
 \begin{center}
   \textcolor{blue}{\url{http://web.stanford.edu/~jurafsky/slp3}}
 \end{center}
-\end{frame}
-%------------------------------------------------------------------------------
-
-%------------------------------------------------------------------------------
-\begin{frame}{Regex: Formal Language Theory}
-  \begin{center}
-    \fbox{\includegraphics[scale=0.4]{figures/chomsky-hierarchy.png}}
-  \end{center}
-  \alert{Regular Expressions} $\equiv$ \alert{Regular Languages} $\equiv$ \alert{Finite State Machines}
 \end{frame}
 %------------------------------------------------------------------------------
 
@@ -194,6 +186,15 @@ Information extraction (IE) can be used to convert some of the information store
   \begin{center}
     \textcolor{blue}{\url{https://www.debuggex.com/}}
   \end{center}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Regex: Formal Language Theory}
+  \begin{center}
+    \fbox{\includegraphics[scale=0.4]{figures/chomsky-hierarchy.png}}
+  \end{center}
+  \alert{Regular Expressions} $\equiv$ \alert{Regular Languages} $\equiv$ \alert{Finite State Machines}
 \end{frame}
 %------------------------------------------------------------------------------
 
