@@ -28,6 +28,9 @@
 \definecolor{regexcolor}{HTML}{003300}
 \definecolor{comment}{HTML}{B22400}
 \definecolor{functions}{HTML}{660000}
+\definecolor{light-gray}{gray}{0.95}
+
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
 
 \lstdefinelanguage{Groovy}[]{Java}{
   basicstyle=\ttfamily,
@@ -164,13 +167,13 @@ Information extraction (IE) can be used to convert some of the information store
   \item A regex \alert{matches} a set of strings
   \item Regex patterns can contain:
   \begin{itemize}
-    \item Sequences: \textcolor{brown}{\texttt{/abc/}}
-    \item Disjunctions: \textcolor{brown}{\texttt{/(a|b|c)/}}
-    \item Repetitions: \textcolor{brown}{\texttt{/[A-Z]*/}}, \textcolor{brown}{\texttt{/[0-9]+/}, \textcolor{brown}{\texttt{/a\{2,3\}b+/}}}
-    \item Ranges: \textcolor{brown}{\texttt{/[A-Z]/}}, \textcolor{brown}{\texttt{/[a-z]/}}, \textcolor{brown}{\texttt{/[0-9]/}}
-    \item Classes: \textcolor{brown}{\texttt{/\textbackslash w/}}, \textcolor{brown}{\texttt{/\textbackslash s/}}, \textcolor{brown}{\texttt{/./}}
-    \item Optionality: \textcolor{brown}{\texttt{/colou?rs?/}}
-    \item Anchors: \textcolor{brown}{\texttt{/\textasciicircum ABC[0-9]+abc\$/}}
+    \item Sequences: \code{abc}
+    \item Disjunctions: \code{(a|b|c)}
+    \item Repetitions: \code{[A-Z]*}, \code{[0-9]+}, \code{a\{2,3\}b+}
+    \item Ranges: \code{[A-Z]}, \code{[a-z]}, \code{[0-9]}
+    \item Classes: \code{\textbackslash w}, \code{\textbackslash s}, \code{.}
+    \item Optionality: \code{colou?rs?}
+    \item Anchors: \code{\^{}ABC[0-9]+abc\$}
   \end{itemize}
 \end{itemize}
 \begin{center}
