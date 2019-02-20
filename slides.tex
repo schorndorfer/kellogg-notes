@@ -194,7 +194,7 @@ Information extraction (IE) can be used to convert some of the information store
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}{Regex: Formal Language Theory}
+\begin{frame}{Chomsky Hierarchy}
   \begin{center}
     \fbox{\includegraphics[scale=0.4]{figures/chomsky-hierarchy.png}}
   \end{center}
@@ -225,7 +225,23 @@ Information extraction (IE) can be used to convert some of the information store
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}{Normalizing Messy Text}
+\begin{frame}{Evaluating Performance}
+\begin{tabular}{p{5cm} p{7cm}}
+    \vspace{0pt}
+    \includegraphics[width=0.4\textwidth]{figures/precisionrecall.png}
+    &
+    \vspace{0pt}
+    \includegraphics[width=0.5\textwidth]{figures/precisionrecall-formulas.png}
+\end{tabular}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\section{Advanced Pattern Matching}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{String Distance Algorithms}
 
 \begin{tabular}{p{5cm} p{7cm}}
     \vspace{0pt}
@@ -245,23 +261,7 @@ Information extraction (IE) can be used to convert some of the information store
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}{Evaluating IE Performance}
-\begin{tabular}{p{5cm} p{7cm}}
-    \vspace{0pt}
-    \includegraphics[width=0.4\textwidth]{figures/precisionrecall.png}
-    &
-    \vspace{0pt}
-    \includegraphics[width=0.5\textwidth]{figures/precisionrecall-formulas.png}
-\end{tabular}
-\end{frame}
-%------------------------------------------------------------------------------
-
-%------------------------------------------------------------------------------
-\section{Advanced Pattern Matching}
-%------------------------------------------------------------------------------
-
-%------------------------------------------------------------------------------
-\begin{frame}[fragile]{Annotation Pattern Matching}
+\begin{frame}[fragile]{Annotation Patterns}
 
 \begin{lstlisting}[frame=single]
 def regex = new AnnotationRegex(
