@@ -1,6 +1,10 @@
 # Information Extraction: Regular Expressions and Beyond
 
-To run the notebooks:
+Compiling the slides:
+
+```xelatex slides.tex```
+
+Running the notebook:
 
 1. ```docker pull schorndorfer/nlp``` (need docker installed)
 2. ```export NLP_NOTEBOOKS=<path_to_repo>/notebooks```
