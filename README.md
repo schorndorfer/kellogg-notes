@@ -1,4 +1,4 @@
-# Presentaton on Information Extraction, with focus on using Regular Expressions
+# Information Extraction: Regular Expressions and Beyond
 
 To run the notebooks:
 
