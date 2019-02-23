@@ -2,7 +2,8 @@
 
 Compiling the slides:
 
-```xelatex slides.tex```
+1. ```xelatex slides.tex```
+2. ```xelatex slides.tex``` (to get TOC)
 
 Running the notebook:
 
