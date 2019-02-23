@@ -2,7 +2,7 @@
 
 Compiling the slides:
 
-1. ```xelatex slides.tex``` (do twice - the 2<sup>nd</sup> time to get TOC)
+1. ```pdflatex slides.tex``` (do twice - the 2<sup>nd</sup> time to get TOC)
 
 Running the notebook:
 
